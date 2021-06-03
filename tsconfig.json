@@ -18,7 +18,7 @@
     "removeComments": false,
     "allowJs": true,
     "moduleResolution": "node",
-    "baseUrl": "src",
+    "baseUrl": "./src",
     "paths": {
       "@src/*": [
         "./src/*"
