@@ -51,7 +51,7 @@
   "scripts": {
     "build": "gatsby build",
     "develop": "gatsby develop",
-    "format": "prettier --write \"**/*.{js,jsx,ts,tsx,json,md}\"",
+    "format": "prettier --write \"**/*.{js,jsx,ts,tsx,json,md,scss,css}\"",
     "lint": "eslint src/**/*.{ts,tsx} --fix",
     "start": "yarn run develop",
     "serve": "gatsby serve",

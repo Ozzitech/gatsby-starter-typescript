@@ -1,19 +1,19 @@
-import React, { FC } from "react"
-import { Helmet } from "react-helmet"
+import React, { FC } from 'react';
+import { Helmet } from 'react-helmet';
 
 interface SeoProps {
-  description?: string
-  lang?: string
-  title: string
-  page?: string
-  author?: string
+  description?: string;
+  lang?: string;
+  title: string;
+  page?: string;
+  author?: string;
 }
 
 const Seo: FC<SeoProps> = ({
-  description = "",
-  lang = "en",
+  description = '',
+  lang = 'en',
   title,
-  author = "",
+  author = '',
   page,
 }) => {
   return (
@@ -25,40 +25,40 @@ const Seo: FC<SeoProps> = ({
       titleTemplate={title ? `%s | ${page}` : undefined}
       meta={[
         {
-          name: "description",
+          name: 'description',
           content: description,
         },
         {
-          property: "og:title",
+          property: 'og:title',
           content: title,
         },
         {
-          property: "og:description",
+          property: 'og:description',
           content: description,
         },
         {
-          property: "og:type",
-          content: "website",
+          property: 'og:type',
+          content: 'website',
         },
         {
-          name: "twitter:card",
-          content: "summary",
+          name: 'twitter:card',
+          content: 'summary',
         },
         {
-          name: "twitter:creator",
+          name: 'twitter:creator',
           content: author,
         },
         {
-          name: "twitter:title",
+          name: 'twitter:title',
           content: title,
         },
         {
-          name: "twitter:description",
+          name: 'twitter:description',
           content: description,
         },
       ]}
     />
-  )
-}
+  );
+};
 
-export { Seo }
+export { Seo };
