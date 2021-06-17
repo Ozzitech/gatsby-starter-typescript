@@ -1,9 +1,10 @@
-import React, { FC } from "react"
-import { useStaticQuery, graphql } from "gatsby"
-import { Header, Footer } from "components"
+import React, { FC } from 'react';
+import { useStaticQuery, graphql } from 'gatsby';
+import { Header, Footer } from 'components';
 import 'sass/style.scss';
+
 export interface LayoutProps {
-  children: JSX.IntrinsicElements["div"]
+  children: JSX.IntrinsicElements['div'];
 }
 
 export const Layout: FC<LayoutProps> = ({ children }) => {
@@ -15,7 +16,7 @@ export const Layout: FC<LayoutProps> = ({ children }) => {
         }
       }
     }
-  `)
+  `);
 
   return (
     <>
@@ -28,8 +29,8 @@ export const Layout: FC<LayoutProps> = ({ children }) => {
         }}
       >
         <main>{children}</main>
-      <Footer/>
+        <Footer />
       </div>
     </>
-  )
-}
+  );
+};

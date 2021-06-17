@@ -1,7 +1,7 @@
-import * as React from "react"
-import { Link } from "gatsby"
+import * as React from 'react';
+import { Link } from 'gatsby';
 
-import { Layout, Seo } from "components"
+import { Layout, Seo } from 'components';
 
 const AboutUS = () => (
   <Layout>
@@ -10,6 +10,6 @@ const AboutUS = () => (
     <p>Welcome to About Us</p>
     <Link to="/">Go back to the Homepage</Link>
   </Layout>
-)
+);
 
 export default AboutUS;

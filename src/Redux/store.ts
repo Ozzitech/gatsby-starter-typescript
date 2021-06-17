@@ -7,6 +7,6 @@ export default (preloadedState: any) => {
   return createStore(
     RootReducer,
     preloadedState,
-    composeWithDevTools(applyMiddleware(thunk)),
+    composeWithDevTools(applyMiddleware(thunk))
   );
 };

@@ -1,10 +1,11 @@
-import * as React from "react"
-import { Link } from "gatsby"
+import * as React from 'react';
+import { Link } from 'gatsby';
+
 export interface HeaderProps {
-  siteTitle: string
+  siteTitle: string;
 }
 
-export const Header = ({ siteTitle = "" }) => (
+export const Header = ({ siteTitle = '' }) => (
   <header
     style={{
       background: `rebeccapurple`,
@@ -31,4 +32,4 @@ export const Header = ({ siteTitle = "" }) => (
       </h1>
     </div>
   </header>
-)
+);
