@@ -29,6 +29,9 @@
       "@pages/*": [
         "./src/pages/*"
       ],
+      "@Redux/*": [
+        "./src/Redux/*"
+      ],  
       "@sass/*": [
         "./src/sass/*"
       ],
