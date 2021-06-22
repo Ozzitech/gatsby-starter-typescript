@@ -37,11 +37,12 @@
       ],
       "@assets/*": [
         "./src/assets/*"
-      ],
+      ]
     }
   },
   "include": [
-    "./src/**/*"
+    "./src/**/*",
+    "setupTest.js"
   ],
   "exclude": [
     "node_modules"
