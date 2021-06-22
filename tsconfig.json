@@ -35,6 +35,9 @@
       "@sass/*": [
         "./src/sass/*"
       ],
+      "@assets/*": [
+        "./src/assets/*"
+      ],
     }
   },
   "include": [
