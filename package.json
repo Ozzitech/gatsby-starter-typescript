@@ -57,6 +57,7 @@
     "eslint-plugin-prettier": "^3.4.0",
     "eslint-plugin-react": "^7.21.5",
     "eslint-plugin-react-hooks": "4.0.0",
+    "husky": "^6.0.0",
     "identity-obj-proxy": "^3.0.0",
     "jest": "^27.0.4",
     "prettier": "^2.3.0",
@@ -69,6 +70,7 @@
   ],
   "license": "0BSD",
   "scripts": {
+    "prepare": "husky install .husky",
     "build": "gatsby build",
     "develop": "gatsby develop",
     "format": "prettier --write \"**/*.{js,jsx,ts,tsx,json,md,scss,css}\"",
