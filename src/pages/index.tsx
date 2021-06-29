@@ -1,6 +1,6 @@
 import * as React from 'react';
 import { Link } from 'gatsby';
-import { Layout, Seo } from 'components';
+import { PageLayout } from 'components';
 import { useSelector, useDispatch } from 'react-redux';
 import { toggleDarkMode } from 'Redux/actions';
 
@@ -10,8 +10,7 @@ const IndexPage = () => {
     return state.DarkModeReducer;
   });
   return (
-    <Layout>
-      <Seo title="Home" />
+    <PageLayout title="Home">
       <h1>Hi Developers</h1>
       <p>Welcome to new Custom Gatsby Starter </p>
       <button
@@ -29,7 +28,7 @@ const IndexPage = () => {
       <p>
         <Link to="/about-us/">Go to About Us</Link> <br />
       </p>
-    </Layout>
+    </PageLayout>
   );
 };
 export default IndexPage;

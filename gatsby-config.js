@@ -71,6 +71,12 @@ module.exports = {
     },
     `gatsby-plugin-sharp`,
     {
+      resolve: `gatsby-plugin-layout`,
+      options: {
+        component: require.resolve(`./src/Layout/index.tsx`),
+      },
+    },
+    {
       resolve: `gatsby-plugin-manifest`,
       options: {
         name: `gatsby-starter-default`,

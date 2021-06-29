@@ -7,7 +7,7 @@ export interface LayoutProps {
   children: JSX.IntrinsicElements['div'];
 }
 
-export const Layout: FC<LayoutProps> = ({ children }) => {
+const Layout: FC<LayoutProps> = ({ children }) => {
   const data = useStaticQuery(graphql`
     query SiteTitleQuery {
       site {
@@ -34,3 +34,5 @@ export const Layout: FC<LayoutProps> = ({ children }) => {
     </>
   );
 };
+
+export default Layout;
