@@ -14,7 +14,7 @@ const Seo: FC<SeoProps> = ({
   lang = 'en',
   title,
   author = '',
-  page,
+  page = '',
 }) => {
   return (
     <Helmet
@@ -62,3 +62,10 @@ const Seo: FC<SeoProps> = ({
 };
 
 export { Seo };
+
+Seo.defaultProps = {
+  description: ' ',
+  lang: ' ',
+  page: ' ',
+  author: ' ',
+};
